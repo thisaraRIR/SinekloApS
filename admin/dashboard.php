@@ -1,4 +1,4 @@
-<?php include('../database/connection.php'); ?>
+<?php include '../database/connection.php'; ?>
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
@@ -66,7 +66,7 @@ if (!isset($_SESSION['email'])) {
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <?php include('./pageWrapper.php') ?>
+        <?php include './pageWrapper.php' ?>
 
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
