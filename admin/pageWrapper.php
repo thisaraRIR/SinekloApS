@@ -24,7 +24,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="footerImageUpload.php">
                     <i class="fas fa-plus-square"></i>
-                    <span>Add Footer Images</span>
+                    <span>Add Home Banner</span>
                 </a>
             </li>
 
