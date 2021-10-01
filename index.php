@@ -53,129 +53,7 @@
       <div id="preloader"></div>
       <!-- preloader - end -->
 
-      <!-- header_section - start
-      ================================================== -->
-      <header class="header_section">
-        <div class="content_wrap">
-          <div class="container maxw_1560">
-            <div class="row align-items-center">
-
-              <div class="col-lg-2 col-md-6 col-6">
-                <div class="brand_logo">
-                  <a class="brand_link" href="index.html">
-                    <img src="assets/images/logo/logo_white_1x.png" srcset="assets/images/logo/logo_white_2x.png 2x" alt="logo_not_found">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-10 col-md-6 col-6">
-                <nav class="main_menu navbar navbar-expand-lg">
-                  <button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
-                  </button>
-                  <div class="main_menu_inner collapse navbar-collapse" id="main_menu_dropdown">
-                    <ul class="main_menu_list ul_li">
-                      <li class="active dropdown">
-                        <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Home
-                        </a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="home_submenu">
-                          <li><a href="index.html">Home V.1</a></li>
-                          <li><a href="index_2.html">Home V.2</a></li>
-                          <li><a href="index_3.html">Home V.3</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="nav-link" href="#" id="about_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="about_submenu">
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="about_2.html">About Me</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="nav-link" href="#" id="portfolio_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          shop
-                        </a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="portfolio_submenu">
-                          <li><a href="shop.html">Shop</a></li>
-                          <li><a href="shop_details.html">Shop Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="nav-link" href="#" id="services_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Pages
-                        </a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="services_submenu">
-                          <li><a href="menu.html">Recipe Menu</a></li>
-                          <li><a href="cart.html">Cart</a></li>
-                          <li class="dropdown">
-                          	<a href="#" id="checkout_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Checkout</a>
-                          	<ul class="submenu dropdown-menu" aria-labelledby="checkout_submenu">
-                          		<li><a href="checkout.html">Checkout Step 1</a></li>
-                          		<li><a href="checkout_step2.html">Checkout Step 2</a></li>
-                          		<li><a href="checkout_step3.html">Checkout Step 3</a></li>
-                          	</ul>
-                          </li>
-                          <li><a href="faq.html">F.A.Q.</a></li>
-                          <li><a href="reserve_table.html">Reserve Table</a></li>
-                          <li><a href="reservation_form.html">Reservation Form</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a class="nav-link" href="#" id="experience_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Blog
-                        </a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="experience_submenu">
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog_details.html">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="contact.html">Contact us</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <ul class="header_btns_group ul_li_right">
-                    <li>
-                      <button type="button" class="main_search_btn" data-bs-toggle="collapse" data-bs-target="#main_search_collapse" aria-expanded="false" aria-controls="main_search_collapse">
-                        <i class="fal fa-search"></i>
-                      </button>
-                    </li>
-                    <li>
-                      <button type="button" class="cart_btn">
-                        <i class="fal fa-shopping-bag"></i>
-                        <small class="cart_counter">2</small>
-                      </button>
-                    </li>
-                    <li>
-                      <a class="btn btn_primary text-uppercase" href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- collapse search - start -->
-        <div class="main_search_collapse collapse" id="main_search_collapse">
-          <div class="main_search_form card">
-            <div class="container maxw_1560">
-              <form action="#">
-                <div class="form_item">
-                  <input type="search" name="search" placeholder="Search here...">
-                  <button type="submit" class="submit_btn"><i class="fal fa-search"></i></button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- collapse search - end -->
-      </header>
-      <!-- header_section - end
-      ================================================== -->
+      <?php include('./inc/headerOne.php') ?>
 
       <!-- main body - start
       ================================================== -->
@@ -259,7 +137,7 @@
         ================================================== -->
         <section class="slider_section slider_dark" style="background-image: url(assets/images/backgrounds/bg_01.png);">
           <div class="main_slider pb-0 wow fadeInUp" data-wow-delay=".1s">
-            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">   
+            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
                   <div class="col-lg-6 col-md-8">
@@ -281,7 +159,7 @@
               </div>
             </div>
 
-            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">   
+            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
                   <div class="col-lg-6 col-md-8">
@@ -303,7 +181,7 @@
               </div>
             </div>
 
-            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">   
+            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
                   <div class="col-lg-6 col-md-8">
@@ -325,7 +203,7 @@
               </div>
             </div>
 
-            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">   
+            <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
                   <div class="col-lg-6 col-md-8">
@@ -387,7 +265,7 @@
                   </div>
                   <h3 class="item_title text-uppercase">awesomae aroma</h3>
                   <p class="mb-0">
-                    The coffee is brewed by first roasting the green coffee beans 
+                    The coffee is brewed by first roasting the green coffee beans
                   </p>
                 </div>
               </div>
@@ -400,7 +278,7 @@
                   </div>
                   <h3 class="item_title text-uppercase">high quality</h3>
                   <p class="mb-0">
-                    The coffee is brewed by first roasting the green coffee beans 
+                    The coffee is brewed by first roasting the green coffee beans
                   </p>
                 </div>
               </div>
@@ -413,7 +291,7 @@
                   </div>
                   <h3 class="item_title text-uppercase">pure grades</h3>
                   <p class="mb-0">
-                    The coffee is brewed by first roasting the green coffee beans 
+                    The coffee is brewed by first roasting the green coffee beans
                   </p>
                 </div>
               </div>
@@ -426,7 +304,7 @@
                   </div>
                   <h3 class="item_title text-uppercase">proper roasting</h3>
                   <p class="mb-0">
-                    The coffee is brewed by first roasting the green coffee beans 
+                    The coffee is brewed by first roasting the green coffee beans
                   </p>
                 </div>
               </div>
@@ -535,7 +413,7 @@
                         <a href="shop_details.html">americano Super hot coffee</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -558,7 +436,7 @@
                         <a href="shop_details.html">special raw coffee</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -581,7 +459,7 @@
                         <a href="shop_details.html">indian pure tea</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -604,7 +482,7 @@
                         <a href="shop_details.html">Bangladeshi green tea</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -627,7 +505,7 @@
                         <a href="shop_details.html">Rolatina Sweets cafe house</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -650,7 +528,7 @@
                         <a href="shop_details.html">special raw coffee</a>
                       </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an 
+                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an
                       </p>
                     </div>
                   </div>
@@ -707,7 +585,7 @@
                       From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate, talk, read, write, entertain one another, or pass the time, whether individually or in small groups.
                     </p>
                     <p class="mb-0 wow fadeInUp" data-wow-delay=".4s">
-                      From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate, 
+                      From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate,
                     </p>
                   </div>
                 </div>
@@ -1264,138 +1142,7 @@
       <!-- main body - end
       ================================================== -->
 
-      <!-- footer_section - start
-      ================================================== -->
-      <footer class="footer_section text-white deco_wrap" style="background-image: url(assets/images/backgrounds/bg_05.png);">
-        <div class="overlay"></div>
-        <div class="footer_widget_area">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-5 col-md-6 col-sm-7">
-                <div class="footer_subscribe_form text-center">
-                  <h2 class="form_title text-uppercase wow fadeInUp" data-wow-delay=".1s">Coffee Build your Fresh mind</h2>
-                  <form action="#">
-                    <div class="form_item wow fadeInUp" data-wow-delay=".2s">
-                      <input type="email" name="email" placeholder="Enter your email">
-                      <button class="btn btn_primary text-uppercase" type="submit">Subscribe Now</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-lg-between">
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_about wow fadeInUp" data-wow-delay=".1s">
-                  <div class="brand_logo">
-                    <a class="brand_link" href="index.html">
-                      <img src="assets/images/logo/logo_white_1x.png" srcset="assets/images/logo/logo_white_2x.png 2x" alt="logo_not_found">
-                    </a>
-                  </div>
-
-                  <p>
-                    Rorem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaminventore veritatis et.orem ipsum dolorconsectetur adipisicing elit, sed do eiusmod tempor incididunt aneye.
-                  </p>
-
-                  <ul class="social_links social_icons ul_li">
-                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#!"><i class="fab fa-behance"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_contact wow fadeInUp" data-wow-delay=".2s">
-                  <h3 class="footer_widget_title text-uppercase">Contact us</h3>
-                  <ul class="ul_li_block">
-                    <li><strong class="text-uppercase">Adress:</strong> 8638 Amarica Stranfod Mailbon Star</li>
-                    <li><strong class="text-uppercase">Mail:</strong> Israfilsupol836@gmail.com</li>
-                    <li><strong class="text-uppercase">Phone:</strong> +7464 0187 3535 645</li>
-                    <li><strong class="text-uppercase">Fax id:</strong> +9 659459 49594</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_opening_time wow fadeInUp" data-wow-delay=".3s">
-                  <h3 class="footer_widget_title text-uppercase">Opening Hours</h3>
-                  <ul class="ul_li_block">
-                    <li>
-                      Monday
-                      <span>9:00 - 18:00</span>
-                    </li>
-                    <li>
-                      tuesday
-                      <span>10:00 - 18:00</span>
-                    </li>
-                    <li>
-                      wednestday
-                      <span>11:00 - 18:00</span>
-                    </li>
-                    <li>
-                      Thusday
-                      <span>12:00 - 18:00</span>
-                    </li>
-                    <li>
-                      Friday
-                      <span>14:00 - 18:00</span>
-                    </li>
-                    <li>
-                      saterday
-                      <span>16:00 - 18:00</span>
-                    </li>
-                    <li>
-                      Sunday
-                      <span>closed</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="footer_widget footer_recent_post wow fadeInUp" data-wow-delay=".4s">
-                  <h3 class="footer_widget_title text-uppercase">Recent News</h3>
-
-                  <div class="recent_post">
-                    <a class="item_image" href="blog_details.html">
-                      <img src="assets/images/recent_post/img_01.png" alt="image_not_found">
-                    </a>
-                    <div class="item_content">
-                      <h4 class="item_title">
-                        <a href="blog_details.html">Best Smell of Americano Coffee Trins</a>
-                      </h4>
-                      <span class="post_date text-uppercase">December 30 - 2021</span>
-                    </div>
-                  </div>
-
-                  <div class="recent_post">
-                    <a class="item_image" href="blog_details.html">
-                      <img src="assets/images/recent_post/img_02.png" alt="image_not_found">
-                    </a>
-                    <div class="item_content">
-                      <h4 class="item_title">
-                        <a href="blog_details.html">Best Smell of Americano Coffee Trins</a>
-                      </h4>
-                      <span class="post_date text-uppercase">December 30 - 2021</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="footer_bottom text-center">
-            <p class="copyright_text mb-0 wow fadeInUp" data-wow-delay=".2s">Copyright@ 2021 Desing by <a class="btn_text" href="https://themeforest.net/user/xpressrow"><span>Xpressrow</span></a></p>
-          </div>
-        </div>
-      </footer>
-      <!-- footer_section - end
-      ================================================== -->
+      <?php include('./inc/footer.php'); ?>
 
     </div>
     <!-- body_wrap - end -->
