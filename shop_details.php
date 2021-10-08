@@ -315,7 +315,7 @@
           					</div>
           				</div>
 
-          				<div class="details_image_carousel_nav">
+          				<!-- <div class="details_image_carousel_nav">
           					<div class="slider_item">
           						<img src="assets/images/shop/img_01.png" alt="image_not_found">
           					</div>
@@ -343,7 +343,7 @@
           					<div class="slider_item">
           						<img src="assets/images/shop/img_06.png" alt="image_not_found">
           					</div>
-          				</div>
+          				</div> -->
           			</div>
           		</div>
 
@@ -351,7 +351,7 @@
           			<div class="details_content wow fadeInUp" data-wow-delay=".2s">
           				<div class="details_flex_title">
           					<h2 class="details_title text-uppercase">Americano Coffee Beans</h2>
-          					<div class="details_review">
+          					<!-- <div class="details_review">
           						<ul class="rating_star ul_li">
           							<li><i class="fas fa-star"></i></li>
           							<li><i class="fas fa-star"></i></li>
@@ -360,22 +360,29 @@
           							<li><i class="far fa-star"></i></li>
           						</ul>
           						<span class="review_text">04 - Customar Review</span>
-          					</div>
+          					</div> -->
           				</div>
           				<p>
           					The coffee is brewed by first roasting the green coffee beans over hot coals in  brazier.Once the beans are roasted each participant is given an opportunity to sample The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. 
           				</p>
+						  <ul class="">
+          							<li>green coffee beans over hot coals</li>
+          							<li>beans are roasted</li>
+          							<li>coffee beans over hot coals</li>
+          							<li>coffee beans over hot coals</li>
+          							<li>coffee beans over hot coals</li>
+          						</ul>
           				<div class="details_price">
           					<strong class="price_text">$25.00</strong>
-          					<span class="in_stuck"><i class="fal fa-check"></i> In stock</span>
+          					<!-- <span class="in_stuck"><i class="fal fa-check"></i> In stock</span> -->
           				</div>
-          				<ul class="details_item_color ul_li">
+          				<!-- <ul class="details_item_color ul_li">
           					<li class="bg_brown"><input type="radio" name="item_color"></li>
           					<li class="bg_browndark"><input type="radio" name="item_color" checked></li>
           					<li class="bg_brownlight"><input type="radio" name="item_color"></li>
-          				</ul>
+          				</ul> -->
           				<ul class="btns_group ul_li">
-          					<li>
+          					<!-- <li>
           						<div class="quantity_input quantity_boxed">
           							<h4 class="quantity_title text-uppercase">Quantity</h4>
           							<form action="#">
@@ -384,13 +391,13 @@
           								<button type="button" class="input_number_increment">+</button>
           							</form>
           						</div>
-          					</li>
-          					<li><a class="btn btn_secondary text-uppercase" href="#!">Add To Cart</a></li>
+          					</li> -->
+          					<!-- <li><a class="btn btn_secondary text-uppercase" href="#!">Add To Cart</a></li> -->
           				</ul>
-          				<div class="details_wishlist_btn">
+          				<!-- <div class="details_wishlist_btn">
           					<a href="#!"><i class="fas fa-heart mr-1"></i> Add to watch list</a>
-          				</div>
-          				<div class="details_share_links">
+          				</div> -->
+          				<!-- <div class="details_share_links">
           					<h4 class="list_title"><i class="fas fa-share mr-1"></i> Share</h4>
           					<ul class="social_links social_icons ul_li">
           						<li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
@@ -399,11 +406,11 @@
           						<li><a href="#!"><i class="fab fa-youtube"></i></a></li>
           						<li><a href="#!"><i class="fab fa-behance"></i></a></li>
           					</ul>
-          				</div>
+          				</div> -->
           			</div>
           		</div>
           	</div>
-
+<!-- 
           	<div class="product_description_wrap wow fadeInUp" data-wow-delay=".3s">
           		<ul class="tabs_nav ul_li nav" role="tablist">
           			<li>
@@ -433,7 +440,7 @@
           				</p>
           			</div>
           		</div>
-          	</div>
+          	</div> -->
 
           	<div class="related_products">
           		<h4 class="area_title text-uppercase mb-0 wow fadeInUp" data-wow-delay=".1s">Related Product</h4>
