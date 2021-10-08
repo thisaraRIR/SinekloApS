@@ -173,32 +173,144 @@
                 </div>
               </div>
 
-              <div class="col-lg-5 col-md-5">
-                <div class="about_content">
-                  <div class="section_title text-uppercase">
+              <div class="section_title text-uppercase">
                     <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> about us</h2>
                     <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
-                      <u>27 Years of experience</u>
+                      <u>Who we are</u>
+                    </h3>
+              </div>
+              <p class="wow fadeInUp" data-wow-delay=".3s">
+                  We are an international trading company registered in Denmark. We import and export quality unique products and main focus is to import and promote country specific quality products from Sri Lanka to Denmark. We have a partner office in Sri Lanka which works hand to hand with export 
+                  development board (the government body to develop exports in Sri Lanka) to ensure that the correct quality products are delivered through a strong supply chain management. We also focus on exporting unique products from Denmark to foreign markets such as Sri Lanka, China and Japan.
+              </p>
+
+              <div class="col-lg-5 col-md-5">
+                <div class="about_content">
+                  <!-- <div class="section_title text-uppercase">
+                    <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> about us</h2>
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Who we are</u>
                     </h3>
                   </div>
                   <p class="wow fadeInUp" data-wow-delay=".3s">
-                    From a cultural standpoint, coffeehouses largely serve as centers of social interaction: the coffeehouse provides patrons with a place to congregate, talk, read, write, entertain one another, or pass the time, whether individually or in small groups.
-                  </p>
+                  We are an international trading company registered in Denmark. We import and export quality unique products and main focus is to import and promote country specific quality products from Sri Lanka to Denmark. We have a partner office in Sri Lanka which works hand to hand with export 
+                  development board (the government body to develop exports in Sri Lanka) to ensure that the correct quality products are delivered through a strong supply chain management. We also focus on exporting unique products from Denmark to foreign markets such as Sri Lanka, China and Japan.
+                  </p> -->
                   <ul class="about_info ul_li_block">
                     <li class="wow fadeInUp" data-wow-delay=".4s">
-                      <h4 class="text-uppercase">There is all about our cafenod coffee shops</h4>
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>What we do</u>
+                    </h3>
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an opportunity to sample
-                      </p>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay=".5s">
-                      <h4 class="text-uppercase">This is followed by the grinding</h4>
+                      We import premium quality products from Asia, especially from Sri Lanka and make them available to the local market in Denmark. We also focus on exporting unique products from Denmark to other Countries. 
+                    </p>
+                    </br> 
                       <p class="mb-0">
-                        The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an opportunity to sample the aromatic smoke by wafting it towards them.
+                      Under the guidance of our partner office in Sri Lanka we involve and support in implementing agriculture development projects in Sri Lanka. The objective is to support small farmer groups with the concept of community empowerment whilst maintaining a sustainable product supply.
                       </p>
+                    </br>
+                     <p class="mb-0">
+                      We are the exclusive agent in Denmark for “Forest Hill” artisan tea brand which offers a range of high-quality artisan Tea.
+                     </p>
+                    </br>
+                     <p class="mb-0">
+                     Under the guidance of our partner office in Sri Lanka we involve and support in implementing agriculture development projects in Sri Lanka. The objective is to support small farmer groups with the concept of community empowerment whilst maintaining a sustainable product supply. 
+                     </p>
                     </li>
                   </ul>
-                  <ul class="btns_group ul_li wow fadeInUp" data-wow-delay=".6s">
+                  <ul class="about_info ul_li_block">
+                    <li class="wow fadeInUp" data-wow-delay=".4s">
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Vision</u>
+                    </h3>
+                      <p class="mb-0">
+                      To provide quality products and customer service that exceeds the expectations of our esteemed customers.
+                    </p>
+                    </br> 
+                    </li>
+                  </ul>
+                  <ul class="about_info ul_li_block">
+                    <li class="wow fadeInUp" data-wow-delay=".4s">
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Mission</u>
+                    </h3>
+                      <p class="mb-0">
+                      Being an international trader, our mission is to provide all our local and international buyers and suppliers with value for money, time and effort through meaningful win-win business transactions.
+                    </p>
+                    </li>
+                  </ul>
+                  <!-- <ul class="about_info ul_li_block">
+                    <li class="wow fadeInUp" data-wow-delay=".4s">
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Core Values</u>
+                    </h3>
+                      <p class="mb-0">
+                      We believe in treating our customers with respect and trust. We grow through creativity, dedication and commitment. We integrate honesty, reliability and business ethics into all aspects of our business functioning.
+                    </p>
+                    </br> 
+                    <p class="mb-0">
+                    All our shipments are subject to quality inspection by professional and well experienced quality control staff appointed by the company. Through our strong supply chain we ensure that the expectations of our customers are met in the term of both product quality and the service.
+                    </p>
+                    </li>
+                  </ul> -->
+                  <ul class="about_info ul_li_block">
+                    <li class="wow fadeInUp" data-wow-delay=".4s">
+                    <!-- <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Our main products are,</u>
+                    </h3>
+                      <p class="mb-0">
+                      (1)1We believe in treating our customers with respect and trust. We grow through creativity, dedication and commitment. We integrate honesty, reliability and business ethics into all aspects of our business functioning.
+                    </p>
+                    </br> 
+                    <p class="mb-0">
+                    All our shipments are subject to quality inspection by professional and well experienced quality control staff appointed by the company. Through our strong supply chain we ensure that the expectations of our customers are met in the term of both product quality and the service.
+                    </p> -->
+                    </li>
+                  </ul>
+
+                  
+
+                  <!-- <ul class="btns_group ul_li wow fadeInUp" data-wow-delay=".6s">
+                    <li>
+                      <a class="btn btn_primary text-uppercase" href="about.html">Learn more</a>
+                    </li>
+                    <li>
+                      <div class="chip_item">
+                        <div class="chip_thumbnail">
+                          <img src="assets/images/meta/img_01.png" alt="image_not_found">
+                        </div>
+                        <div class="chip_content text-uppercase">
+                          <h5 class="chip_name">rasalina De Willamson</h5>
+                          <span class="chip_title">Founder & CO</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+            </div>
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Core Values</u>
+                    </h3>
+                      <p class="mb-0">
+                      We believe in treating our customers with respect and trust. We grow through creativity, dedication and commitment. We integrate honesty, reliability and business ethics into all aspects of our business functioning.
+                    </p>
+                    </br> 
+                    <p class="mb-0">
+                    All our shipments are subject to quality inspection by professional and well experienced quality control staff appointed by the company. Through our strong supply chain we ensure that the expectations of our customers are met in the term of both product quality and the service.
+                    </p>
+                    <br>
+                    <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
+                      <u>Our main products are,</u>
+                    </h3>
+                    <ul>
+                      <li>Artisan Tea</li>
+                      <li>High-quality spices</li>
+                      <li>Coir brushes</li>
+                      <li>Gem and Jewellery</li>
+                    </ul>
+                    <br>
+                    <ul class="btns_group ul_li wow fadeInUp" data-wow-delay=".6s">
                     <li>
                       <a class="btn btn_primary text-uppercase" href="about.html">Learn more</a>
                     </li>
@@ -214,11 +326,7 @@
                       </div>
                     </li>
                   </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="our_history_area">
+            <!-- <div class="our_history_area">
               <div class="row align-items-center">
                 <div class="col-lg-2 col-md-2">
                   <div class="item_icon wow fadeInUp" data-wow-delay=".1s">
@@ -227,7 +335,25 @@
                   </div>
                 </div>
                 <div class="col-lg-5 col-md-5 order-first wow fadeInUp" data-wow-delay=".2s">
-                  <h3 class="item_title text-uppercase">HIstory of our Cafenod Coffee house</h3>
+                  <h3 class="item_title text-uppercase">Vision</h3>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                  <p class="wow fadeInUp" data-wow-delay=".3s">
+                  To provide quality products and customer service that exceeds the expectations of our esteemed customers.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="our_history_area">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-md-2">
+                  <div class="item_icon wow fadeInUp" data-wow-delay=".1s">
+                    <img src="assets/images/feature/icon_01.png" alt="icon_not_found">
+                    <span class="bg_shape"></span>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-5 order-first wow fadeInUp" data-wow-delay=".2s">
+                  <h3 class="item_title text-uppercase">Mission</h3>
                 </div>
                 <div class="col-lg-5 col-md-5">
                   <p class="wow fadeInUp" data-wow-delay=".3s">
@@ -235,7 +361,25 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <!-- <div class="our_history_area">
+              <div class="row align-items-center">
+                <div class="col-lg-2 col-md-2">
+                  <div class="item_icon wow fadeInUp" data-wow-delay=".1s">
+                    <img src="assets/images/feature/icon_01.png" alt="icon_not_found">
+                    <span class="bg_shape"></span>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-5 order-first wow fadeInUp" data-wow-delay=".2s">
+                  <h3 class="item_title text-uppercase">Mission</h3>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                  <p class="wow fadeInUp" data-wow-delay=".3s">
+                    The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an opportunity to sample The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. 
+                  </p>
+                </div>
+              </div>
+            </div> -->
 
             <div class="row">
               <div class="col-lg-3 col-md-4 col-sm-6">
