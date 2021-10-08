@@ -220,7 +220,8 @@
         <!-- google map - start
         ================================================== -->
         <div class="map_section">
-          <div id="mapBox" class="wow fadeInUp" data-wow-delay=".1s" data-lat="40.701083" data-lon="-74.1522848" data-zoom="12" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083" data-mlon="-74.1522848">
+          <div class="wow fadeInUp" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.817095583467!2d12.560050315928859!3d55.70955098054181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652525914e1abff%3A0x54f6816d085563c8!2sLyngbyvej%2032D%2C%202100%20K%C3%B8benhavn%2C%20Denmark!5e0!3m2!1sen!2slk!4v1633322740144!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
         <!-- google map - end

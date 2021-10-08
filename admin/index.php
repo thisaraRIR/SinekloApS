@@ -37,7 +37,7 @@ if (@$_GET['Invalid'] == true) {
 ?>
     <div class="container" id="container">
         <div class="form-container sign-in-container">
-            <form action="process.php" method="post">
+            <form action="proccess.php" method="post">
                 <h1 style="padding-bottom: 15px">Admin Login</h1>
                 <input type="email" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">

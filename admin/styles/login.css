@@ -18,7 +18,7 @@ body {
 h1 {
     margin: 0px;
     font-family: 'Merienda', cursive;
-    color: #4568b1;
+    color: #61532d;
 }
 
 h2 {
@@ -38,7 +38,7 @@ span {
 }
 
 a {
-    color: blue;
+    color: brown;
     font-size: 12px;
     text-decoration: none;
     margin: 15px 0;
@@ -47,8 +47,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #384da1;
-    background-color: #384da1;
+    border: 1px solid #61532d;
+    background-color: #61532d;
     color: #FFFFFF;
     font-weight: bold;
     padding: 12px 45px;
