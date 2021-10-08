@@ -1,16 +1,20 @@
-<?php include '../database/connection.php'; ?>
+<?php include('../database/connection.php'); ?>
+<?php include('./php_code.php'); ?>
+
 <?php
 session_start();
 if (!isset($_SESSION['email'])) {
     header("location: index.php");
 }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-    <title>ADMIN PANEL</title>
+    <title>ADMIN PANEL - ADD BANNER IMAGES</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +61,7 @@ if (!isset($_SESSION['email'])) {
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="./styles/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../admin//styles//sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +70,7 @@ if (!isset($_SESSION['email'])) {
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <?php include './pageWrapper.php' ?>
+        <?php include('./pageWrapper.php') ?>
 
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
@@ -106,49 +110,140 @@ if (!isset($_SESSION['email'])) {
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-            <div class="container-fluid" style="width: 1300px;"><br />
-                    <!-- Page Heading -->
                 <div class="container-fluid" style="width: 1300px;"><br />
+                    <!-- Page Heading -->
+                    <div class="container-fluid" style="width: 1300px;"><br />
 
-                    <center>
-                        <h1 class="h3 mb-1 text-gray-800">GENERATE IMAGE URL</h1>
-                    </center>
+                        <center>
+                            <h1 class="h3 mb-1 text-gray-800">ADD BANNER IMAGES</h1>
+                        </center>
 
-                    <form method="post" action="" enctype="multipart/form-data" style="width: 60%">
+                        <?php
+                            if(isset($_GET['success'])){
+                        ?>
+                        <div class="alert alert-success" role="alert">
+                            Image Successfully Added!
+                        </div>
+                        <?php
+                            }else if(isset($_GET['error'])){
+                        ?>
+                        <div class="alert alert-danger" role="alert">
+                            Somethig Went Wrong!
+                        </div>
+                        <?php
+                            }else if(isset($_GET['del'])){
+                        ?>
+                        <div class="alert alert-success" role="alert">
+                            Image Deleted Successfully!
+                        </div>
+                        <?php
+                            }
+                        ?>
+
+                        <form method="post" action="php_code.php" enctype="multipart/form-data" style="width: 60%">
+                            <div class="row">
+
+                                <div class="col-md-offset-1"><br>
+                                    <div class="col-15">
+                                        <label for="img">Banner Image* (please upload 1628 x 854 dimension)</label>
+                                        <input type="file" class="form-control" name="img" value="" required>
+                                    </div><br>
+                                </div>
+                            </div>
+
+                            <div class="col-md-20">
+                                <button type="submit" name="bannerImg" class="btn btn-primary">Add Image</button>
+                            </div>
+
+                        </form>
+                        <hr /><br />
+
+                        <center>
+                            <h1 class="h3 mb-1 text-gray-800">VIEW BANNER IMAGES LIST</h1>
+                        </center><br>
+
+                        <center>
+                            <div class="table-responsive">
+                                <table class="table table-bordered" style="width: 80%">
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <th style="color: white">#</th>
+                                            <th style="color: white">Banner Image</th>
+                                            <th style="color: white">Delete</th>
+                                        </tr>
+                                    </thead>
+
+                                <?php
+                                $i   = 1;
+                                $qry = "select * from banner";
+                                $run = $db->query($qry);
+                                if ($run->num_rows > 0) {
+                                    while ($row = $run->fetch_assoc()) {
+                                        $id = $row['id'];
+                                ?>
+
+                                    <tr>
+                                        <td><?php echo $i++ ?></td>
+                                        <td><?php echo '<img src="../upload/banner/' . $row['img'] . '" width = "150px;" height = "100px;" alt = "Image">' ?>
+                                        </td>
+
+                                        <td>
+                                            <a href="php_code.php?b_del=<?php echo $row['id']; ?>" class="del_btn"><i
+                                                    class="fa fa-trash" style="color:black"></i></a>
+                                        </td>
+                                    </tr>
+
+                                    <?php ?>
+
+                                    <?php
+                                    }
+                                }
+                                ?>
+
+                                </table>
+                            </div>
+                        </center>
+
+                        <div class="card-body">
+                            <?php
+                        if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+                            echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['success'] . '</h2>';
+                            unset($_SESSION['success']);
+                        }
+
+                        if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+                            echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['status'] . '</h2>';
+                            unset($_SESSION['status']);
+                        }
+
+                        ?>
+                        </div>
+
+                        <!-- Content Row -->
                         <div class="row">
 
-                            <div class="col-md-offset-1"><br>
-                                <div class="col-15">
-                                    <label for="img">Insert Your Image (please upload 300 x 300 dimension)</label>
-                                    <input type="file" class="form-control" name="upload" value="" required>
-                                </div><br>
-                            </div>
                         </div>
-                        <div class="col-md-20">
-                            <button type="submit" name="link" class="btn btn-primary">Generate Link</button>
-                        </div>
-
-                    </form>
-
-                    <!-- Content Row -->
-                    <div class="row">
+                        <!-- End of Main Content -->
 
                     </div>
-                    <!-- End of Main Content -->
+                    <!-- End of Content Wrapper -->
 
                 </div>
-                <!-- End of Content Wrapper -->
-
+                <!-- End of Page Wrapper -->
             </div>
-            <!-- End of Page Wrapper -->
         </div>
     </div>
-</div>
 
     <!-- Scroll to Top Button -->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
+    <script>
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="../vendor/jquery/jquery.min.js"></script>

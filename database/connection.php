@@ -3,7 +3,7 @@
 $host = 'localhost:3306';
 $user = 'root';
 $pass = '';
-$db_name = 'parenthoodweb';
+$db_name = 'sinekloaps';
 
     //database connection
     $db = mysqli_connect($host,$user,$pass,$db_name);
