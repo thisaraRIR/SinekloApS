@@ -139,7 +139,7 @@ if (!isset($_SESSION['email'])) {
 
                                 <div class="col-md-offset-1"><br>
                                     <div class="col-15">
-                                        <label for="img">Product Image*</label>
+                                        <label for="img">Product Image* (please upload 187 x 195 dimension)</label>
                                         <input type="file" class="form-control" name="img" value="" required>
                                     </div><br>
                                 </div>

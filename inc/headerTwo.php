@@ -38,13 +38,13 @@
                         </ul> -->
                       </li>
                       <li class="dropdown">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="shop.php">
                           shop
                         </a>
-                        <ul class="submenu dropdown-menu" aria-labelledby="portfolio_submenu">
+                        <!-- <ul class="submenu dropdown-menu" aria-labelledby="portfolio_submenu">
                           <li><a href="shop.php">Shop</a></li>
                           <li><a href="shop_details.php">Shop Details</a></li>
-                        </ul>
+                        </ul> -->
                       </li>
                       <li class="dropdown">
                         <a class="nav-link" href="#" id="services_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -82,7 +82,7 @@
                   </div>
 
                   <ul class="header_btns_group ul_li_right">
-                    <li>
+                    <!-- <li>
                       <button type="button" class="main_search_btn" data-bs-toggle="collapse" data-bs-target="#main_search_collapse" aria-expanded="false" aria-controls="main_search_collapse">
                         <i class="fal fa-search"></i>
                       </button>
@@ -92,7 +92,7 @@
                         <i class="fal fa-shopping-bag"></i>
                         <small class="cart_counter">2</small>
                       </button>
-                    </li>
+                    </li> -->
                     <li>
                       <a class="btn btn_primary text-uppercase" href="contact.php">Contact Us</a>
                     </li>
@@ -105,7 +105,7 @@
         </div>
 
         <!-- collapse search - start -->
-        <div class="main_search_collapse collapse" id="main_search_collapse">
+        <!-- <div class="main_search_collapse collapse" id="main_search_collapse">
           <div class="main_search_form card">
             <div class="container maxw_1560">
               <form action="#">
@@ -116,7 +116,7 @@
               </form>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- collapse search - end -->
       </header>
       <!-- header_section - end

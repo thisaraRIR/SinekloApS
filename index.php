@@ -1,4 +1,4 @@
-<?php include('./database/connection.php') ?>
+<?php include './database/connection.php' ?>
 <!doctype html>
 <html lang="en">
 
@@ -54,7 +54,7 @@
         <div id="preloader"></div>
         <!-- preloader - end -->
 
-        <?php include('./inc/headerOne.php') ?>
+        <?php include './inc/headerOne.php' ?>
 
         <!-- main body - start
       ================================================== -->
@@ -125,8 +125,9 @@
                         <span>$76.00</span>
                     </div>
                     <ul class="btns_group ul_li">
-                        <li><a href="cart.html" class="btn btn_primary text-uppercase">View Cart</a></li>
-                        <li><a href="checkout.html" class="btn btn_border border_black text-uppercase">Checkout</a></li>
+                        <li><a href="cart.php" class="btn btn_primary text-uppercase">View Cart</a></li>
+                        <li><a href="checkout.php" class="btn btn_border border_black text-uppercase">Checkout</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="cart_sidebar_overlay"></div>
@@ -140,17 +141,17 @@
                 style="background-image: url(assets/images/backgrounds/bg_01.png);">
                 <div class="main_slider pb-0 wow fadeInUp" data-wow-delay=".1s">
 
-            <?php 
-                $qry = "SELECT * FROM banner";
-                $data = mysqli_query($db, $qry)or die('error');
-                if(mysqli_num_rows($data) > 0){
-                  while($row = mysqli_fetch_assoc($data)){
-                    $id = $row['id'];
-                    $img = $row['img'];
-                 
-            ?>
+                    <?php
+                        $qry  = "SELECT * FROM banner";
+                        $data = mysqli_query($db, $qry) or die('error');
+                        if (mysqli_num_rows($data) > 0) {
+                            while ($row = mysqli_fetch_assoc($data)) {
+                                        $id  = $row['id'];
+                                        $img = $row['img'];
+
+                    ?>
                     <div class="slider_item text-white"
-                        <?php echo 'style="background-image: url(./upload/banner/' .$img. ');' ?>">
+                        <?php echo 'style="background-image: url(./upload/banner/' . $img . ');' ?>">
                         <div class="container">
                             <div class="row justify-content-lg-start justify-content-md-center">
                                 <div class="col-lg-6 col-md-8">
@@ -159,14 +160,16 @@
                                         Time to discover coffee house
                                     </h3>
                                     <p data-animation="fadeInUp" data-delay=".4s">
-                                        The coffee is brewed by first roasting the green coffee beans over hot coals in
+                                        The coffee is brewed by first roasting the green coffee beans over hot
+                                        coals in
                                         a brazier. given an opportunity to sample.
                                     </p>
                                     <ul class="btns_group ul_li" data-animation="fadeInUp" data-delay=".6s">
-                                        <li><a class="btn btn_primary text-uppercase" href="menu.html">testy Coffee</a>
+                                        <li><a class="btn btn_primary text-uppercase" href="menu.php">testy
+                                                Coffee</a>
                                         </li>
                                         <li><a class="btn btn_border border_white text-uppercase"
-                                                href="shop_details.html">Learn more</a></li>
+                                                href="shop_details.php">Learn more</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -175,10 +178,10 @@
                             <img src="assets/images/slider/shape_01.png" alt="image_not_found">
                         </div>
                     </div>
-            <?php
-               }
-              }
-            ?>
+                    <?php
+}
+}
+?>
                     <!-- <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
@@ -190,8 +193,8 @@
                       The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
                     </p>
                     <ul class="btns_group ul_li" data-animation="fadeInUp" data-delay=".6s">
-                      <li><a class="btn btn_primary text-uppercase" href="menu.html">testy Coffee</a></li>
-                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.html">Learn more</a></li>
+                      <li><a class="btn btn_primary text-uppercase" href="menu.php">testy Coffee</a></li>
+                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.php">Learn more</a></li>
                     </ul>
                   </div>
                 </div>
@@ -200,7 +203,7 @@
                 <img src="assets/images/slider/shape_01.png" alt="image_not_found">
               </div>
             </div> -->
-                    <!-- 
+                    <!--
             <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
@@ -212,8 +215,8 @@
                       The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
                     </p>
                     <ul class="btns_group ul_li" data-animation="fadeInUp" data-delay=".6s">
-                      <li><a class="btn btn_primary text-uppercase" href="menu.html">testy Coffee</a></li>
-                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.html">Learn more</a></li>
+                      <li><a class="btn btn_primary text-uppercase" href="menu.php">testy Coffee</a></li>
+                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.php">Learn more</a></li>
                     </ul>
                   </div>
                 </div>
@@ -222,7 +225,7 @@
                 <img src="assets/images/slider/shape_01.png" alt="image_not_found">
               </div>
             </div> -->
-                    <!-- 
+                    <!--
             <div class="slider_item text-white" style="background-image: url(assets/images/slider/img_01.png);">
               <div class="container">
                 <div class="row justify-content-lg-start justify-content-md-center">
@@ -234,8 +237,8 @@
                       The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier. given an opportunity to sample.
                     </p>
                     <ul class="btns_group ul_li" data-animation="fadeInUp" data-delay=".6s">
-                      <li><a class="btn btn_primary text-uppercase" href="menu.html">testy Coffee</a></li>
-                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.html">Learn more</a></li>
+                      <li><a class="btn btn_primary text-uppercase" href="menu.php">testy Coffee</a></li>
+                      <li><a class="btn btn_border border_white text-uppercase" href="shop_details.php">Learn more</a></li>
                     </ul>
                   </div>
                 </div>
@@ -263,8 +266,10 @@
                                 <ul class="social_links social_text ul_li text-uppercase wow fadeInLeft">
                                     <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>
                                             facebook</a></li>
-                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i> twitter</a></li>
-                                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i> youtube</a>
+                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>
+                                            twitter</a></li>
+                                    <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>
+                                            youtube</a>
                                     </li>
                                 </ul>
                             </div>
@@ -357,42 +362,52 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="about_content">
                                 <div class="section_title text-uppercase">
-                                    <h2 class="small_title"><i class="fas fa-coffee"></i> about us</h2>
+                                    <h2 class="small_title"><i class="fas fa-coffee"></i> Who we are</h2>
                                     <h3 class="big_title wow fadeInUp" data-wow-delay=".1s">
-                                        There is all about cafenod coffee house
+                                        A team that loves to create
                                     </h3>
                                 </div>
                                 <p class="wow fadeInUp" data-wow-delay=".2s">
-                                    From a cultural standpoint, coffeehouses largely serve as centers of social
-                                    interaction: the coffeehouse provides patrons with a place to congregate, talk,
-                                    read, write, entertain one another, or pass the time,
-                                    whether individually or in small groups.
+                                    We are an international trading company registered in Denmark. We import and export
+                                    quality unique products and main focus is to import and promote country specific
+                                    quality products from Sri Lanka to Denmark. We have a partner office in Sri Lanka
+                                    which works hand to hand with export development board (the government body to
+                                    develop exports in Sri Lanka) to ensure that the correct quality products are
+                                    delivered through a strong supply chain management. We also focus on exporting
+                                    unique products from Denmark to foreign markets such as Sri Lanka, China and Japan.
                                 </p>
-                                <ul class="about_info ul_li_block">
+                                <!-- <ul class="about_info ul_li_block">
                                     <li class="wow fadeInUp" data-wow-delay=".3s">
-                                        <h4 class="text-uppercase"><i class="far fa-square-full"></i> There is all about
+                                        <h4 class="text-uppercase"><i class="far fa-square-full"></i> There is
+                                            all about
                                             our cafenod coffee shops</h4>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                             opportunity to sample
                                         </p>
                                     </li>
                                     <li class="wow fadeInUp" data-wow-delay=".4s">
-                                        <h4 class="text-uppercase"><i class="far fa-square-full"></i> This is followed
+                                        <h4 class="text-uppercase"><i class="far fa-square-full"></i> This is
+                                            followed
                                             by the grinding</h4>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                             opportunity to sample the aromatic smoke by wafting it towards them.
                                         </p>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <ul class="btns_group ul_li wow fadeInUp" data-wow-delay=".5s">
                                     <li>
-                                        <a class="btn btn_primary text-uppercase" href="about.html">Learn more</a>
+                                        <a class="btn btn_primary text-uppercase" href="about.php">Learn
+                                            more</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <div class="chip_item">
                                             <div class="chip_thumbnail">
                                                 <img src="assets/images/meta/img_01.png" alt="image_not_found">
@@ -402,7 +417,7 @@
                                                 <span class="chip_title">Founder & CO</span>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -417,61 +432,89 @@
             <section class="recipe_menu_section sec_ptb_120 bg_gray deco_wrap">
                 <div class="container">
                     <div class="section_title text-uppercase text-center">
-                        <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> Our
-                            special Menu</h2>
+                        <!-- <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i>
+                            Our
+                            special Menu</h2> -->
                         <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">
-                            cafenod coffee house
+                            Products
                         </h3>
                     </div>
 
                     <ul class="filters-button-group ul_li_center wow fadeInUp" data-wow-delay=".3s">
                         <li><button class="button text-uppercase active" data-filter="*">all</button></li>
-                        <li><button class="button text-uppercase" data-filter=".chocolate">chocolate</button></li>
-                        <li><button class="button text-uppercase" data-filter=".coffee">coffee</button></li>
-                        <li><button class="button text-uppercase" data-filter=".sandwiches">sandwiches</button></li>
-                        <li><button class="button text-uppercase" data-filter=".sweets">sweets</button></li>
-                        <li><button class="button text-uppercase" data-filter=".blacktea">black tea</button></li>
-                        <li><button class="button text-uppercase" data-filter=".greantea">grean tea</button></li>
+                        <li><button class="button text-uppercase" data-filter=".ArtisanTea">Artisan Tea</button>
+                        </li>
+                        <li><button class="button text-uppercase" data-filter=".High-qualityspices">High-quality
+                                Spices</button></li>
+                        <li><button class="button text-uppercase" data-filter=".Coirbrushes">Coir Brushes</button>
+                        </li>
+                        <li><button class="button text-uppercase" data-filter=".GemandJewellery">Gem and
+                                Jewellery</button></li>
+                        <!-- <li><button class="button text-uppercase" data-filter=".blacktea">black tea</button>
+                        </li>
+                        <li><button class="button text-uppercase" data-filter=".greantea">grean tea</button>
+                        </li> -->
                     </ul>
 
                     <div class="recipe_item_grid grid wow fadeInUp" data-wow-delay=".4s">
-                        <div class="element-item chocolate greantea " data-category="chocolate">
+                        <?php
+					 $qry = "SELECT * FROM products ORDER BY id DESC LIMIT 8";
+					 $run = $db->query($qry);
+					 if ($run -> num_rows > 0) {
+						 while ($row = $run->fetch_assoc()) {
+							 $id           = $row['id'];
+							 $productName  = $row['productName'];
+							 $productImage = $row['productImage'];
+							 $category     = $row['productType'];
+				    ?>
+                        <div class="element-item <?php echo str_replace(' ', '', $category) ?>"
+                            data-category="<?php echo str_replace(' ', '', $category) ?>">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
-                                        <img src="assets/images/menu/img_01.png" alt="image_not_found">
+                                    <a class="item_image" href="shop_details.php" style="height: 100px; width: 100px;">
+                                        <?php echo '<img src="./upload/products/'.$productImage.'" alt="image_not_found">' ?>
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">americano Super hot coffee</a>
+                                            <a href="shop_details.php"><?php echo $productName ?></a>
                                         </h3>
-                                        <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
-                                        </p>
+                                        <!-- <p class="mb-0">
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
+                                        </p> -->
                                     </div>
                                 </div>
                                 <div class="content_col">
-                                    <strong class="item_price">
-                                        <sub>$</sub>3.5
-                                    </strong>
+                                    <!-- <strong class="item_price"> -->
+                                    <!-- <sub>$</sub>3.5 -->
+                                    <a class="btn btn_border border_black text-uppercase"
+                                        href="shop_details.php?product=<?php echo $id ?>">View Details</a>
+                                    <!-- </strong> -->
                                 </div>
                             </div>
                         </div>
+                        <?php 
+                         }
+                    }
+                    ?>
 
-                        <div class="element-item coffee blacktea " data-category="coffee">
+                        <!-- <div class="element-item coffee blacktea " data-category="coffee">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
+                                    <a class="item_image" href="shop_details.php">
                                         <img src="assets/images/menu/img_02.png" alt="image_not_found">
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">special raw coffee</a>
+                                            <a href="shop_details.php">special raw coffee</a>
                                         </h3>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                         </p>
                                     </div>
                                 </div>
@@ -486,16 +529,18 @@
                         <div class="element-item sandwiches sweets " data-category="sandwiches">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
+                                    <a class="item_image" href="shop_details.php">
                                         <img src="assets/images/menu/img_03.png" alt="image_not_found">
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">indian pure tea</a>
+                                            <a href="shop_details.php">indian pure tea</a>
                                         </h3>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                         </p>
                                     </div>
                                 </div>
@@ -510,16 +555,18 @@
                         <div class="element-item sweets sandwiches " data-category="sweets">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
+                                    <a class="item_image" href="shop_details.php">
                                         <img src="assets/images/menu/img_04.png" alt="image_not_found">
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">Bangladeshi green tea</a>
+                                            <a href="shop_details.php">Bangladeshi green tea</a>
                                         </h3>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                         </p>
                                     </div>
                                 </div>
@@ -534,16 +581,18 @@
                         <div class="element-item blacktea coffee " data-category="blacktea">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
+                                    <a class="item_image" href="shop_details.php">
                                         <img src="assets/images/menu/img_05.png" alt="image_not_found">
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">Rolatina Sweets cafe house</a>
+                                            <a href="shop_details.php">Rolatina Sweets cafe house</a>
                                         </h3>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                         </p>
                                     </div>
                                 </div>
@@ -558,16 +607,18 @@
                         <div class="element-item greantea chocolate " data-category="greantea">
                             <div class="recipe_item">
                                 <div class="content_col">
-                                    <a class="item_image" href="shop_details.html">
+                                    <a class="item_image" href="shop_details.php">
                                         <img src="assets/images/menu/img_02.png" alt="image_not_found">
                                     </a>
                                     <div class="item_content">
                                         <h3 class="item_title text-uppercase">
-                                            <a href="shop_details.html">special raw coffee</a>
+                                            <a href="shop_details.php">special raw coffee</a>
                                         </h3>
                                         <p class="mb-0">
-                                            The coffee is brewed by first roasting the green coffee beans over hot coals
-                                            in a brazier. Once the beans are roasted each participant is given an
+                                            The coffee is brewed by first roasting the green coffee beans over
+                                            hot coals
+                                            in a brazier. Once the beans are roasted each participant is given
+                                            an
                                         </p>
                                     </div>
                                 </div>
@@ -577,7 +628,7 @@
                                     </strong>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -622,14 +673,19 @@
                                     </div>
 
                                     <p class="wow fadeInUp" data-wow-delay=".3s">
-                                        From a cultural standpoint, coffeehouses largely serve as centers of social
-                                        interaction: the coffeehouse provides patrons with a place to congregate, talk,
-                                        read, write, entertain one another, or pass the time, whether individually or in
+                                        From a cultural standpoint, coffeehouses largely serve as centers of
+                                        social
+                                        interaction: the coffeehouse provides patrons with a place to
+                                        congregate, talk,
+                                        read, write, entertain one another, or pass the time, whether
+                                        individually or in
                                         small groups.
                                     </p>
                                     <p class="mb-0 wow fadeInUp" data-wow-delay=".4s">
-                                        From a cultural standpoint, coffeehouses largely serve as centers of social
-                                        interaction: the coffeehouse provides patrons with a place to congregate,
+                                        From a cultural standpoint, coffeehouses largely serve as centers of
+                                        social
+                                        interaction: the coffeehouse provides patrons with a place to
+                                        congregate,
                                     </p>
                                 </div>
                             </div>
@@ -665,7 +721,8 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <a class="btn btn_secondary text-uppercase" href="contact.html">Contact Us</a>
+                                        <a class="btn btn_secondary text-uppercase" href="contact.php">Contact
+                                            Us</a>
                                     </div>
                                 </div>
 
@@ -743,17 +800,22 @@
                                 <div class="col-lg-6">
                                     <div class="item_content">
                                         <div class="section_title text-uppercase">
-                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client Testimonial
+                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client
+                                                Testimonial
                                             </h3>
                                             <h4 class="big_title">
                                                 Our client say something about cafenod
                                             </h4>
                                         </div>
                                         <p>
-                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse
                                             cillum dolore eu fugiat nulla pariatuey.
                                         </p>
                                         <div class="testimonial_admin text-uppercase">
@@ -785,17 +847,22 @@
                                 <div class="col-lg-6">
                                     <div class="item_content">
                                         <div class="section_title text-uppercase">
-                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client Testimonial
+                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client
+                                                Testimonial
                                             </h3>
                                             <h4 class="big_title">
                                                 Our client say something about cafenod
                                             </h4>
                                         </div>
                                         <p>
-                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse
                                             cillum dolore eu fugiat nulla pariatuey.
                                         </p>
                                         <div class="testimonial_admin text-uppercase">
@@ -827,17 +894,22 @@
                                 <div class="col-lg-6">
                                     <div class="item_content">
                                         <div class="section_title text-uppercase">
-                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client Testimonial
+                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client
+                                                Testimonial
                                             </h3>
                                             <h4 class="big_title">
                                                 Our client say something about cafenod
                                             </h4>
                                         </div>
                                         <p>
-                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse
                                             cillum dolore eu fugiat nulla pariatuey.
                                         </p>
                                         <div class="testimonial_admin text-uppercase">
@@ -869,17 +941,22 @@
                                 <div class="col-lg-6">
                                     <div class="item_content">
                                         <div class="section_title text-uppercase">
-                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client Testimonial
+                                            <h3 class="small_title"><i class="fas fa-coffee"></i> Client
+                                                Testimonial
                                             </h3>
                                             <h4 class="big_title">
                                                 Our client say something about cafenod
                                             </h4>
                                         </div>
                                         <p>
-                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                            veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse
                                             cillum dolore eu fugiat nulla pariatuey.
                                         </p>
                                         <div class="testimonial_admin text-uppercase">
@@ -932,15 +1009,25 @@
 
                             <div class="col-lg-6 col-md-4">
                                 <div class="abtn_wrap text-lg-end text-md-end wow fadeInUp" data-wow-delay=".3s">
-                                    <a class="btn btn_border border_black" href="shop.html">See all product</a>
+                                    <a class="btn btn_border border_black" href="shop.php">See all product</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row justify-content-center">
+                        <?php
+                            $i   = 1;
+                            $qry = "SELECT * FROM products ORDER BY id DESC LIMIT 6";
+                            $run = $db->query($qry);
+                            if ($run->num_rows > 0) {
+                                while ($row = $run->fetch_assoc()) {
+                                    $id           = $row['id'];
+                                    $productName  = $row['productName'];
+                                    $productImage = $row['productImage'];
+                        ?>
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="shop_card wow fadeInUp" data-wow-delay=".1s">
+                            <div class="shop_card wow fadeInUp" data-wow-delay=".<?php echo $i ?>s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
                                     <button type="button" class="share_btn">
@@ -954,22 +1041,27 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
-                                    <img src="assets/images/shop/img_01.png" alt="image_not_found">
+                                <a class="item_image" href="shop_details.php">
+                                    <?php echo '<img src="./upload/products/' . $productImage . '" alt="image_not_found">' ?>
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">Testy coffee stimy</a>
+                                        <a href="shop_details.php"><?php echo $productName ?></a>
                                     </h3>
                                     <div class="btns_group">
-                                        <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <!-- <span class="item_price bg_default_brown">$101</span> -->
+                                        <a class="btn btn_border border_black text-uppercase"
+                                            href="shop_details.php?product=<?php echo $id ?>">View Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php
+}
+}
+?>
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="shop_card wow fadeInUp" data-wow-delay=".2s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
@@ -984,22 +1076,23 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
+                                <a class="item_image" href="shop_details.php">
                                     <img src="assets/images/shop/img_02.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">americano pure grades</a>
+                                        <a href="shop_details.php">americano pure grades</a>
                                     </h3>
                                     <div class="btns_group">
                                         <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To
+                                            Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="shop_card wow fadeInUp" data-wow-delay=".3s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
@@ -1014,22 +1107,23 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
+                                <a class="item_image" href="shop_details.php">
                                     <img src="assets/images/shop/img_03.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">indian Roasting pack</a>
+                                        <a href="shop_details.php">indian Roasting pack</a>
                                     </h3>
                                     <div class="btns_group">
                                         <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To
+                                            Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="shop_card wow fadeInUp" data-wow-delay=".1s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
@@ -1044,22 +1138,23 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
+                                <a class="item_image" href="shop_details.php">
                                     <img src="assets/images/shop/img_04.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">bangladeshi organic grades</a>
+                                        <a href="shop_details.php">bangladeshi organic grades</a>
                                     </h3>
                                     <div class="btns_group">
                                         <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To
+                                            Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="shop_card wow fadeInUp" data-wow-delay=".2s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
@@ -1074,22 +1169,23 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
+                                <a class="item_image" href="shop_details.php">
                                     <img src="assets/images/shop/img_05.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">arvica coffee pack</a>
+                                        <a href="shop_details.php">arvica coffee pack</a>
                                     </h3>
                                     <div class="btns_group">
                                         <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To
+                                            Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="shop_card wow fadeInUp" data-wow-delay=".3s">
                                 <a class="wishlist_btn" href="#!"><i class="fal fa-heart"></i></a>
                                 <div class="share_btns">
@@ -1104,20 +1200,21 @@
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul>
                                 </div>
-                                <a class="item_image" href="shop_details.html">
+                                <a class="item_image" href="shop_details.php">
                                     <img src="assets/images/shop/img_06.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="shop_details.html">americano pure grades</a>
+                                        <a href="shop_details.php">americano pure grades</a>
                                     </h3>
                                     <div class="btns_group">
                                         <span class="item_price bg_default_brown">$101</span>
-                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To Cart</a>
+                                        <a class="btn btn_border border_black text-uppercase" href="#!">Add To
+                                            Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -1131,7 +1228,8 @@
                 <div class="container">
 
                     <div class="section_title text-uppercase text-center">
-                        <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i> News &
+                        <h2 class="small_title wow fadeInUp" data-wow-delay=".1s"><i class="fas fa-coffee"></i>
+                            News &
                             Blog</h2>
                         <h3 class="big_title wow fadeInUp" data-wow-delay=".2s">Latest news & Blog</h3>
                     </div>
@@ -1139,18 +1237,20 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="blog_grid wow fadeInUp" data-wow-delay=".1s">
-                                <a class="item_image" href="blog_details.html">
+                                <a class="item_image" href="blog_details.php">
                                     <img src="assets/images/blog/img_01.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="blog_details.html">Americano Spacial Coffee</a>
+                                        <a href="blog_details.php">Americano Spacial Coffee</a>
                                     </h3>
                                     <p>
-                                        The coffee is brewed by first roasting the green coffee beans over hot coals in
+                                        The coffee is brewed by first roasting the green coffee beans over hot
+                                        coals in
                                         a brazier.Once the beans are roasted each participant is given...
                                     </p>
-                                    <a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span>
+                                    <a class="btn_text text-uppercase" href="blog_details.php"><span>Read
+                                            More</span>
                                         <i class="far fa-angle-double-right"></i></a>
                                     <ul class="post_meta ul_li">
                                         <li><a href="#!"><i class="fal fa-user"></i> Rasalina De</a></li>
@@ -1163,18 +1263,20 @@
 
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="blog_grid wow fadeInUp" data-wow-delay=".2s">
-                                <a class="item_image" href="blog_details.html">
+                                <a class="item_image" href="blog_details.php">
                                     <img src="assets/images/blog/img_02.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="blog_details.html">Americano Spacial Coffee</a>
+                                        <a href="blog_details.php">Americano Spacial Coffee</a>
                                     </h3>
                                     <p>
-                                        The coffee is brewed by first roasting the green coffee beans over hot coals in
+                                        The coffee is brewed by first roasting the green coffee beans over hot
+                                        coals in
                                         a brazier.Once the beans are roasted each participant is given...
                                     </p>
-                                    <a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span>
+                                    <a class="btn_text text-uppercase" href="blog_details.php"><span>Read
+                                            More</span>
                                         <i class="far fa-angle-double-right"></i></a>
                                     <ul class="post_meta ul_li">
                                         <li><a href="#!"><i class="fal fa-user"></i> Rasalina De</a></li>
@@ -1187,18 +1289,20 @@
 
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="blog_grid wow fadeInUp" data-wow-delay=".3s">
-                                <a class="item_image" href="blog_details.html">
+                                <a class="item_image" href="blog_details.php">
                                     <img src="assets/images/blog/img_03.png" alt="image_not_found">
                                 </a>
                                 <div class="item_content">
                                     <h3 class="item_title text-uppercase">
-                                        <a href="blog_details.html">Americano Spacial Coffee</a>
+                                        <a href="blog_details.php">Americano Spacial Coffee</a>
                                     </h3>
                                     <p>
-                                        The coffee is brewed by first roasting the green coffee beans over hot coals in
+                                        The coffee is brewed by first roasting the green coffee beans over hot
+                                        coals in
                                         a brazier.Once the beans are roasted each participant is given...
                                     </p>
-                                    <a class="btn_text text-uppercase" href="blog_details.html"><span>Read More</span>
+                                    <a class="btn_text text-uppercase" href="blog_details.php"><span>Read
+                                            More</span>
                                         <i class="far fa-angle-double-right"></i></a>
                                     <ul class="post_meta ul_li">
                                         <li><a href="#!"><i class="fal fa-user"></i> Rasalina De</a></li>
@@ -1211,7 +1315,7 @@
                     </div>
 
                     <div class="load_more text-center wow fadeInUp" data-wow-delay=".1s">
-                        <a class="btn btn_border border_black text-uppercase" href="blog.html">See all Blog</a>
+                        <a class="btn btn_border border_black text-uppercase" href="blog.php">See all Blog</a>
                     </div>
 
                 </div>
@@ -1223,7 +1327,7 @@
         <!-- main body - end
       ================================================== -->
 
-        <?php include('./inc/footer.php'); ?>
+        <?php include './inc/footer.php'; ?>
 
     </div>
     <!-- body_wrap - end -->
@@ -1260,4 +1364,4 @@
 
 </body>
 
-</html>
+<.php>
