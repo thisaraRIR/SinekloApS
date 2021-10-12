@@ -1,5 +1,5 @@
-<?php include('../database/connection.php'); ?>
-<?php include('./php_code.php'); ?>
+<?php include '../database/connection.php'; ?>
+<?php include './php_code.php'; ?>
 
 <?php
 session_start();
@@ -70,7 +70,7 @@ if (!isset($_SESSION['email'])) {
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <?php include('./pageWrapper.php') ?>
+        <?php include './pageWrapper.php' ?>
 
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
@@ -115,30 +115,30 @@ if (!isset($_SESSION['email'])) {
                     <div class="container-fluid" style="width: 1300px;"><br />
 
                         <center>
-                            <h1 class="h3 mb-1 text-gray-800">ADD BANNER IMAGES</h1>
+                            <h1 class="h3 mb-1 text-gray-800">ADD BANNER IMAGES(ONLY 4 IMAGES ACCEPTED)</h1>
                         </center>
 
                         <?php
-                            if(isset($_GET['success'])){
-                        ?>
+if (isset($_GET['success'])) {
+    ?>
                         <div class="alert alert-success" role="alert">
                             Image Successfully Added!
                         </div>
                         <?php
-                            }else if(isset($_GET['error'])){
-                        ?>
+} elseif (isset($_GET['error'])) {
+    ?>
                         <div class="alert alert-danger" role="alert">
                             Somethig Went Wrong!
                         </div>
                         <?php
-                            }else if(isset($_GET['del'])){
-                        ?>
+} elseif (isset($_GET['del'])) {
+    ?>
                         <div class="alert alert-success" role="alert">
                             Image Deleted Successfully!
                         </div>
                         <?php
-                            }
-                        ?>
+}
+?>
 
                         <form method="post" action="php_code.php" enctype="multipart/form-data" style="width: 60%">
                             <div class="row">
@@ -173,14 +173,14 @@ if (!isset($_SESSION['email'])) {
                                         </tr>
                                     </thead>
 
-                                <?php
-                                $i   = 1;
-                                $qry = "select * from banner";
-                                $run = $db->query($qry);
-                                if ($run->num_rows > 0) {
-                                    while ($row = $run->fetch_assoc()) {
-                                        $id = $row['id'];
-                                ?>
+                                    <?php
+$i   = 1;
+$qry = "select * from banner";
+$run = $db->query($qry);
+if ($run->num_rows > 0) {
+    while ($row = $run->fetch_assoc()) {
+        $id = $row['id'];
+        ?>
 
                                     <tr>
                                         <td><?php echo $i++ ?></td>
@@ -196,9 +196,9 @@ if (!isset($_SESSION['email'])) {
                                     <?php ?>
 
                                     <?php
-                                    }
-                                }
-                                ?>
+}
+}
+?>
 
                                 </table>
                             </div>
@@ -206,17 +206,17 @@ if (!isset($_SESSION['email'])) {
 
                         <div class="card-body">
                             <?php
-                        if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
-                            echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['success'] . '</h2>';
-                            unset($_SESSION['success']);
-                        }
+if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+    echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['success'] . '</h2>';
+    unset($_SESSION['success']);
+}
 
-                        if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
-                            echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['status'] . '</h2>';
-                            unset($_SESSION['status']);
-                        }
+if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+    echo '<h2 class = "bg-primary text-white"> ' . $_SESSION['status'] . '</h2>';
+    unset($_SESSION['status']);
+}
 
-                        ?>
+?>
                         </div>
 
                         <!-- Content Row -->
